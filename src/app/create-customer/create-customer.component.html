@@ -1,0 +1,64 @@
+<div class="col-md-6 offset-md-3">
+    <div class="card card-container">
+      <div class="col-md-6 offset-md-3">
+        <br>
+    
+    <h3><u>Create Account</u></h3>
+    
+    <form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+    <label for="name">Name:</label>
+    <input  type="text" class="form-control" id="name" 
+    [(ngModel)] = "customer.customerName" name="name">
+    </div>
+      
+    
+    <div class="form-group">
+        <label for="address">Address:</label>
+        <input  type="text" class="form-control" id="address" 
+        [(ngModel)] = "customer.customerAddress" name="address">
+        </div>
+
+        <div class="form-group">
+            <label for="adharNo">Aadhar No.:</label>
+            <input   type="text" class="form-control" id="adharNo" 
+            [(ngModel)] = "customer.customerAdharNo" name="adharNo">
+            </div>
+
+            <div class="form-group">
+                <label for="pan">Pan No.:</label>
+                <input   type="text" class="form-control" id="pan" 
+                [(ngModel)] = "customer.customerPanNo" name="pan">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input   type="text" class="form-control" id="email" 
+                    [(ngModel)] = "customer.customerEmail" name="email">
+                    </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone No.:</label>
+                    <input  type="text" class="form-control" id="phone" 
+                    [(ngModel)] = "customer.customerPhone" name="phone">
+                    </div>
+    
+            <div class="form-group">
+              <label for="uname">Username:</label>
+              <input  type="text" class="form-control" id="uname" 
+              [(ngModel)] = "customer.userName" name="username">
+              </div>
+
+              <div class="form-group">
+                <label for="pass">Password:</label>
+                <input  type="password" class="form-control" id="pass" 
+                [(ngModel)] = "customer.password" name="password">
+              </div>
+        
+            <br>
+            <button class="btn btn-success" type="submit">Submit</button> 
+             <!--<button [disabled]="form.invalid" class="btn btn-success" type="submit">Submit</button>-->
+    </form>
+    </div>
+
+
